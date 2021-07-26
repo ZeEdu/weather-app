@@ -1,0 +1,101 @@
+.wrapper {
+  box-sizing: border-box;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.box {
+  margin: 0 auto;
+  width: 450px;
+  border-radius: 0.5rem;
+  background: #fef6e3;
+  padding: 1rem;
+}
+
+.box > .row {
+  flex: 1;
+  text-align: start;
+  padding: 4px;
+}
+
+.topRow {
+  display: flex;
+  justify-content: space-between;
+}
+
+.closeButton {
+  cursor: pointer;
+}
+
+.text {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #5c5b5a;
+  display: inline;
+  font-size: 0.75rem;
+}
+
+.today {
+  margin: 0 12px;
+}
+
+.heading {
+  font-size: 2rem;
+  font-weight: bold;
+}
+.bold {
+  font-weight: bold;
+}
+
+.separator {
+  height: 2px;
+  margin: 12px;
+  background: #fb9d04;
+}
+.weekday {
+  font-size: 0.875rem;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 0.25rem 0;
+  color: #5c5b5a;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.forecast {
+  display: flex;
+  flex-wrap: nowrap;
+}
+.forecast > div {
+  flex: 1;
+  text-align: center;
+}
+
+.forecastMinMax {
+  color: #fb9d04;
+  font-size: 0.875rem;
+  margin: 0 0.25rem;
+}
+
+.icon {
+  margin-right: 0.25rem;
+  color: #fb9d04;
+}
+
+.inline {
+  display: inline;
+}
+
+.minMaxMargin {
+  margin-right: 0.5rem;
+}
+
+.itemMarginRight {
+  margin-right: 0.75rem;
+}
+
+@media (max-width: 576px) {
+  .box {
+    max-width: 100%;
+    border-radius: 0;
+  }
+}
