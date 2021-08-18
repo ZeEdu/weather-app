@@ -35,7 +35,7 @@ const SearchBar: FC<Props> = ({ setCity, setError, setLoading }) => {
         throw new Error("Cidade Não encontrada");
       }
       setCity({ weather, forecast });
-    } catch (error) {
+    } catch (error: any) {
       if (error.message === "Cidade Não encontrada") {
         setError(error.message);
       } else {
